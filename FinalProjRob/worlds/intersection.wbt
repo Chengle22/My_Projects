@@ -1,0 +1,152 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+  gpsCoordinateSystem "WGS84"
+}
+Viewpoint {
+  orientation 0.5779026185244656 0.5733242051506107 0.580799379554581 4.178431097698554
+  position -8.71695880142381 178.2130020004489 -6.344592163711621
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 1000 1000
+  floorTileSize 1 1
+  floorAppearance Parquetry {
+    colorOverride 0 0.915129 0
+  }
+}
+RoadIntersection {
+  translation 0 0.15 0
+  rotation 0 1 0 2.3561996938995744
+  roadsWidth 12
+  startRoadsLength [
+    496
+  ]
+  startRoadsNumberOfLanes 4
+  startRoadsStartLine []
+  appearance Asphalt {
+    colorOverride 0 0 0
+  }
+}
+PedestrianCrossing {
+  translation -7.03 0.15 -0.159993
+  rotation 0 1 0 -1.5707953071795862
+  size 12 2
+  enableBoundingObject FALSE
+}
+PedestrianCrossing {
+  translation 7.05 0.15 -0.119999
+  rotation 0 1 0 -1.5707953071795862
+  name "pedestrian crossing(1)"
+  size 12 2
+  enableBoundingObject FALSE
+}
+CrossRoadsTrafficLight {
+  translation -0.01 0 -0.06
+  size 13 13
+}
+PedestrianCrossing {
+  translation 0.0299908 0.15 7.03
+  rotation 0 1 0 3.14159
+  name "pedestrian crossing(2)"
+  size 12 2
+  enableBoundingObject FALSE
+}
+PedestrianCrossing {
+  translation 0.130028 0.15 -6.85
+  rotation 0 1 0 3.14159
+  name "pedestrian crossing(3)"
+  size 12 2
+  enableBoundingObject FALSE
+}
+LincolnMKZ {
+  translation 4.69999 0.4 31.98
+  rotation 0 1 0 3.14159
+  name "first"
+  controller "my_controller"
+  supervisor TRUE
+  sensorsSlotTop [
+    GPS {
+    }
+  ]
+}
+LincolnMKZ {
+  translation 4.48999 0.4 61.11
+  rotation 0 1 0 3.14159
+  name "first(1)"
+  controller "my_controller"
+  supervisor TRUE
+  sensorsSlotTop [
+    GPS {
+    }
+  ]
+}
+LincolnMKZ {
+  translation -4.12992 0.4 -29.64
+  rotation 0 1 0 -5.307179586466759e-06
+  name "first(4)"
+  controller "my_controller"
+  supervisor TRUE
+  sensorsSlotTop [
+    GPS {
+    }
+  ]
+}
+LincolnMKZ {
+  translation -4.02984 0.4 -50.6
+  rotation 0 1 0 -5.307179586466759e-06
+  name "first(5)"
+  controller "my_controller"
+  supervisor TRUE
+  sensorsSlotTop [
+    GPS {
+    }
+  ]
+}
+LincolnMKZ {
+  translation -51.4599 0.4 4.31988
+  rotation 0 1 0 1.57079
+  name "first(2)"
+  controller "my_controller"
+  supervisor TRUE
+  sensorsSlotTop [
+    GPS {
+    }
+  ]
+}
+LincolnMKZ {
+  translation -31.2199 0.4 4.41995
+  rotation 0 1 0 1.57079
+  name "first(6)"
+  controller "my_controller"
+  supervisor TRUE
+  sensorsSlotTop [
+    GPS {
+    }
+  ]
+}
+LincolnMKZ {
+  translation 36.9 0.4 -4.74999
+  rotation 0 1 0 -1.5707953071795862
+  name "last(2)"
+  controller "my_controller"
+  supervisor TRUE
+  sensorsSlotTop [
+    GPS {
+    }
+  ]
+}
+LincolnMKZ {
+  translation 19.43 0.4 -4.64999
+  rotation 0 1 0 -1.5707953071795862
+  name "last"
+  controller "my_controller"
+  supervisor TRUE
+  sensorsSlotTop [
+    GPS {
+    }
+  ]
+}
